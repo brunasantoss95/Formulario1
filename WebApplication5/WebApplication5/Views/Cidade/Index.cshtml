@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form action="/Cidade/ListaCidade" method="POST">
+    <fieldset>
+        <legend>Cidade</legend>
+        <div>
+            <label for="id">Id Cidade</label>
+        </div>
+        <div>
+            <input type="number" value="@Model.id" id="id" name="id" />
+        </div>
+
+
+        <div>
+            <label for="nomecidade">Nome Cidade</label>
+        </div>
+        <div>
+            <input type="string" value="@Model.nomecidade" id="nomecidade" name="nomecidade" />
+        </div>
+
+
+        <div>
+            <label for="uf">UF</label>
+        </div>
+        <div>
+            <input type="string" value="@Model.uf" id="uf" name="uf" />
+        </div>
+
+        <div>
+            <label for="pais">Pais</label>
+        </div>
+        <div>
+            <input type="string" value="@Model.pais" id="pais" name="pais" />
+        </div>
+
+        <p><input type="submit" value="enviar" /></p>
+    </fieldset>
+
+</form>
+
